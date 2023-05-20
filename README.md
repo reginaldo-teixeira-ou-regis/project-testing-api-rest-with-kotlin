@@ -13,7 +13,9 @@ project-testing-api-rest-with-kotlin
 
 ### Customer
 
-**Rota: POST `/api/customers`**  /  "http://localhost:8080/api/customers"
+**Rota: POST `/api/customers`**
+
+"http://localhost:8080/api/customers"
 
 ```bash
 Body: {
