@@ -16,7 +16,7 @@ project-testing-api-rest-with-kotlin
 **Rota: POST `/api/customers`**
 
 ```bash
-curl -s -X POST -H "Content-Type: application/json" -d '{
+{
   "firstName": "John",
   "lastName": "Doe",
   "cpf": "980.860.250-98",
@@ -25,10 +25,8 @@ curl -s -X POST -H "Content-Type: application/json" -d '{
   "password": "123456",
   "zipCode": "654321",
   "street": "John Street"
-}'
+}
 ```
- "http://localhost:8080/api/customers"
-
 #
 
 **Rota: GET `/api/customers/{id}`**
