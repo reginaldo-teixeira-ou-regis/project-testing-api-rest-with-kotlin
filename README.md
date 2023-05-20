@@ -1,5 +1,4 @@
 project-testing-api-rest-with-kotlin
-#
 ## API Rest for a Credit Application Analysis System
 
 ### Technologies Used:
