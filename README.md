@@ -23,7 +23,7 @@ http://localhost:8080/swagger-ui.html
 
 * #### Create Customer
 
-***Rota: POST http://localhost:8080/api/customers***
+*****Rota: POST http://localhost:8080/api/customers*****
 ```bash
 {
   "firstName": "John",
