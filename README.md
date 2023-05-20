@@ -12,9 +12,9 @@ project-testing-api-rest-with-kotlin
 
 #
 
-# Api Documentation
+## Api Documentation
 
-## * Create Customer
+* ### Create Customer
 
 **Rota: POST http://localhost:8080/api/customers**
 ```bash
