@@ -12,18 +12,18 @@ project-testing-api-rest-with-kotlin
 
 #
 
-## SWAGGER URL
+### SWAGGER URL
 ```bash
 http://localhost:8080/swagger-ui.html
 ```
 
 #
 
-## Api Documentation
+### Api Documentation
 
-* ### Create Customer
+* #### Create Customer
 
-**Rota: POST http://localhost:8080/api/customers**
+***Rota: POST http://localhost:8080/api/customers***
 ```bash
 {
   "firstName": "John",
