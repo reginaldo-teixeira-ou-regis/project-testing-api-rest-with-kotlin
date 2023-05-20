@@ -25,8 +25,10 @@ curl -s -X POST -H "Content-Type: application/json" -d '{
   "password": "123456",
   "zipCode": "654321",
   "street": "John Street"
-}' "http://localhost:8080/api/customers"
+}'
 ```
+ "http://localhost:8080/api/customers"
+
 #
 
 **Rota: GET `/api/customers/{id}`**
