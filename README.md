@@ -21,16 +21,6 @@
     </a>
 </p>
 
-<h3 align="center">Project Description</h3>
-
-
-<figure>
-<p align="center">
-  <img src="https://i.imgur.com/7phya16.png" height="350" width="450" alt="API para Sistema de Avaliação de Créditos"/><br>
-  Simplified UML Diagram of an API for Credit Rating System
-</p>
-</figure>
-
 #
 
 ### Customer
@@ -47,19 +37,19 @@ curl -s -X POST -H "Content-Type: application/json" -d '{
   "password": "123456",
   "zipCode": "654321",
   "street": "John Street"
-}' "http://localhost:8080/api/customers" | jq
+}' "http://localhost:8080/api/customers"
 ```
 
 **Rota: GET `/api/customers/{id}`**
 
 ```bash
-curl -s -X GET "http://localhost:8080/api/customers/1" | jq
+curl -s -X GET "http://localhost:8080/api/customers/1"
 ```
 
 **Rota: DELETE `/api/customers/{id}`**
 
 ```bash
-curl -s -X DELETE "http://localhost:8080/api/customers/1" | jq
+curl -s -X DELETE "http://localhost:8080/api/customers/1"
 ```
 
 **Rota: PATCH `/api/customers?customerId={id}`**
@@ -71,7 +61,7 @@ curl -s -X PATCH -H "Content-Type: application/json" -d '{
   "income": 10500.0,
   "zipCode": "654321",
   "street": "John Street"
-}' "http://localhost:8080/api/customers?customerId=1" | jq
+}' "http://localhost:8080/api/customers?customerId=1"
 ```
 
 ---
@@ -86,19 +76,19 @@ curl -s -X POST -H "Content-Type: application/json" -d '{
   "creditValue": 300.0,
   "dayFirstOfInstallment": "2023-07-01",
   "numberOfInstallments": 5
-}' "http://localhost:8080/api/credits" | jq
+}' "http://localhost:8080/api/credits"
 ```
 
 **Rota: GET `/api/credits?customerId={customerId}`**
 
 ```bash
-curl -s -X GET "http://localhost:8080/api/credits?customerId=1" | jq
+curl -s -X GET "http://localhost:8080/api/credits?customerId=1"
 ```
 
 **Rota: GET `/api/credits/{creditCode}?customerId={customerId}`**
 
 ```bash
-curl -s -X GET "http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1" | jq
+curl -s -X GET "http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1"
 ```
 
 
