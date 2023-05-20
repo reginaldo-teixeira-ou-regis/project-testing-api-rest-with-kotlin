@@ -1,5 +1,5 @@
 <h1>project-testing-api-rest-with-kotlin</h1>
-<p align="center">API Rest para um Sistema de Analise de Solicitação de Crédito</p>
+<p align="center">API Rest for a Credit Application Analysis System</p>
 <p align="center">
      <a alt="Java">
         <img src="https://img.shields.io/badge/Java-v17-blue.svg" />
@@ -13,7 +13,7 @@
     <a alt="Gradle">
         <img src="https://img.shields.io/badge/Gradle-v7.6-lightgreen.svg" />
     </a>
-    <a alt="H2 ">
+    <a alt="H2">
         <img src="https://img.shields.io/badge/H2-v2.1.214-darkblue.svg" />
     </a>
     <a alt="Flyway">
@@ -21,7 +21,7 @@
     </a>
 </p>
 
-<h3>Descrição do Projeto</h3>
+<h3>Project Description</h3>
 
 
 <figure>
