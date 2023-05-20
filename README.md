@@ -14,12 +14,11 @@ project-testing-api-rest-with-kotlin
 
 # Api Documentation
 
-* Create Customer
+* **Create Customer**
 
-**Rota: POST `/api/customers`**
-
+**Rota: POST http://localhost:8080/api/customers**
 ```bash
-Body: {
+{
   "firstName": "John",
   "lastName": "Doe",
   "cpf": "75984921901",
@@ -30,7 +29,6 @@ Body: {
   "street": "John Doe Street"
 }
 ```
-"http://localhost:8080/api/customers"
 
 #
 
@@ -49,7 +47,7 @@ Body: {
 **Rota: PATCH `/api/customers?customerId={id}`**
 
 ```bash
-Body: {
+{
   "firstName": "John",
   "lastName": "Abert Doe",
   "income": 5000.0,
@@ -66,7 +64,7 @@ Body: {
 **Rota: POST `/api/credits`**
 
 ```bash
-Body: {
+{
   "customerId": 1,
   "creditValue": 1000.0,
   "dayFirstOfInstallment": "2023-06-25",
