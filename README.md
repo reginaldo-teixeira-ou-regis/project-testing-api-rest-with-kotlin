@@ -32,13 +32,19 @@ project-testing-api-rest-with-kotlin
 
 #
 
+* ### Get Customer By id
+
 **Rota: GET http://localhost:8080/api/customers/1**
 
 #
 
+* ### Delete Customer By id
+
 **Rota: DELETE http://localhost:8080/api/customers/1**
 
 #
+
+* ### Update Customer
 
 **Rota: PATCH http://localhost:8080/api/customers?customerId=1**
 ```bash
@@ -53,6 +59,8 @@ project-testing-api-rest-with-kotlin
 
 ---
 
+* ### Create Credit
+
 **Rota: POST http://localhost:8080/api/credits**
 ```bash
 {
@@ -65,9 +73,13 @@ project-testing-api-rest-with-kotlin
 
 #
 
+* ### Get All Customer Credits by Id
+
 **Rota: GET http://localhost:8080/api/credits?customerId=1**
 
 #
+
+* ### GET By Credit Code
 
 **Rota: GET http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1**
 
