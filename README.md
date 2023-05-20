@@ -1,7 +1,8 @@
-<h1 align="center">project-testing-api-rest-with-kotlin</h1>
-<p align="center">API Rest for a Credit Application Analysis System</p>
+project-testing-api-rest-with-kotlin
 
-# Technologies Used:
+### API Rest for a Credit Application Analysis System
+
+## Technologies Used:
 ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=plastic&logo=kotlin&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=plastic&logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%236DB33F.svg?style=plastic&logo=spring-boot)
