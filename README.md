@@ -16,72 +16,58 @@ project-testing-api-rest-with-kotlin
 **Rota: POST `/api/customers`**  /  "http://localhost:8080/api/customers"
 
 ```bash
-{
+Body: {
   "firstName": "John",
   "lastName": "Doe",
-  "cpf": "980.860.250-98",
+  "cpf": "75984921901",
   "income": 3000.0,
-  "email": "john@example.com",
+  "email": "john_doe@example.com",
   "password": "123456",
-  "zipCode": "654321",
-  "street": "John Street"
+  "zipCode": "02469060",
+  "street": "John Doe Street"
 }
 ```
 #
 
-**Rota: GET `/api/customers/{id}`**
+**Rota: GET `/api/customers/{id}`**  /  "http://localhost:8080/api/customers/1"
 
-```bash
-curl -s -X GET "http://localhost:8080/api/customers/1"
-```
 #
 
-**Rota: DELETE `/api/customers/{id}`**
+**Rota: DELETE `/api/customers/{id}`**  /  "http://localhost:8080/api/customers/1"
 
-```bash
-curl -s -X DELETE "http://localhost:8080/api/customers/1"
-```
 #
 
-**Rota: PATCH `/api/customers?customerId={id}`**
+**Rota: PATCH `/api/customers?customerId={id}`**  /   "http://localhost:8080/api/customers?customerId=1"
 
 ```bash
-curl -s -X PATCH -H "Content-Type: application/json" -d '{
+Body: {
   "firstName": "John",
-  "lastName": "Smith",
-  "income": 10500.0,
-  "zipCode": "654321",
-  "street": "John Street"
-}' "http://localhost:8080/api/customers?customerId=1"
+  "lastName": "Abert Doe",
+  "income": 5000.0,
+  "zipCode": "59104025",
+  "street": "John Albert Doe Street"
+}
 ```
 
 ---
 
 ### Credits
 
-**Rota: POST `/api/credits`**
+**Rota: POST `/api/credits`**  /  "http://localhost:8080/api/credits"
 
 ```bash
-curl -s -X POST -H "Content-Type: application/json" -d '{
+Body: {
   "customerId": 1,
   "creditValue": 300.0,
   "dayFirstOfInstallment": "2023-07-01",
   "numberOfInstallments": 5
-}' "http://localhost:8080/api/credits"
+}
 ```
 #
 
-**Rota: GET `/api/credits?customerId={customerId}`**
+**Rota: GET `/api/credits?customerId={customerId}`**  /  "http://localhost:8080/api/credits?customerId=1"
 
-```bash
-curl -s -X GET "http://localhost:8080/api/credits?customerId=1"
-```
 #
 
-**Rota: GET `/api/credits/{creditCode}?customerId={customerId}`**
-
-```bash
-curl -s -X GET "http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1"
-```
-
+**Rota: GET `/api/credits/{creditCode}?customerId={customerId}`**  /  "http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1"
 
