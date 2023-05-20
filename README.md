@@ -1,34 +1,14 @@
 <h1 align="center">project-testing-api-rest-with-kotlin</h1>
 <p align="center">API Rest for a Credit Application Analysis System</p>
-<p align="center">
-     <a alt="Java">
-        <img src="https://img.shields.io/badge/Java-v17-blue.svg" />
-    </a>
-    <a alt="Kotlin">
-        <img src="https://img.shields.io/badge/Kotlin-v1.7.22-purple.svg" />
-    </a>
-    <a alt="Spring Boot">
-        <img src="https://img.shields.io/badge/Spring%20Boot-v3.0.3-brightgreen.svg" />
-    </a>
-    <a alt="Gradle">
-        <img src="https://img.shields.io/badge/Gradle-v7.6-lightgreen.svg" />
-    </a>
-    <a alt="H2">
-        <img src="https://img.shields.io/badge/H2-v2.1.214-darkblue.svg" />
-    </a>
-    <a alt="Flyway">
-        <img src="https://img.shields.io/badge/Flyway-v9.5.1-red.svg">
-    </a>
-</p>
 
 # Technologies Used:
 ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=plastic&logo=kotlin&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=plastic&logo=java&logoColor=white)
-![H2 Database](https://img.shields.io/badge/H2%20Database-gray?style=plastic&logo=h2&logoColor=white)
-![Gradle](https://img.shields.io/badge/gradle-%2302303A.svg?style=plastic&logo=gradle&logoColor=white)
-![JUnit](https://img.shields.io/badge/JUnit-%23525DCB.svg?style=plastic&logo=junit5&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%236DB33F.svg?style=plastic&logo=spring-boot)
+![Gradle](https://img.shields.io/badge/gradle-%2302303A.svg?style=plastic&logo=gradle&logoColor=white)
+![H2 Database](https://img.shields.io/badge/H2%20Database-gray?style=plastic&logo=h2&logoColor=white)
 [![Swagger UI](https://img.shields.io/badge/Swagger%20UI-%2385EA2D.svg?style=plastic&logo=swagger&logoColor=white)](https://link-para-o-seu-swagger-ui)
+![JUnit](https://img.shields.io/badge/JUnit-%23525DCB.svg?style=plastic&logo=junit5&logoColor=white)
 
 ### Customer
 
