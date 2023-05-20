@@ -27,18 +27,9 @@
 <figure>
 <p align="center">
   <img src="https://i.imgur.com/7phya16.png" height="350" width="450" alt="API para Sistema de Avaliação de Créditos"/><br>
-  Diagrama UML Simplificado de uma API para Sistema de Avaliação de Crédito
+  Simplified UML Diagram of an API for Credit Rating System
 </p>
 </figure>
-
-<h3>Instrução de Uso</h3>
-<p>No Terminal/Console:</p>
-<ol>
-	<li>Faça um clone do projeto na sua máquina: <code>git clone</code></li>
-	<li>Entre na pasta raiz do projeto: <code>cd </code></li> 
-	<li>Execute o comando: <code>./gradlew bootrun</code></li>
-</ol>
-<h6>** Visando facilitar a demostração da aplicação, recomendo instalar apenas o IntelliJ IDEA e executar o projeto através da IDE **</h6>
 
 
 
