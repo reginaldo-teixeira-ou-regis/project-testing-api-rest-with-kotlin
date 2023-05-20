@@ -13,14 +13,14 @@ project-testing-api-rest-with-kotlin
 
 ### Customer
 
-**Rota: POST `/api/customers`**
+**Rota: POST `/api/customers`**  /  "http://localhost:8080/api/customers"
 
 ```bash
 {
   "firstName": "John",
   "lastName": "Doe",
   "cpf": "980.860.250-98",
-  "income": 1000.0,
+  "income": 3000.0,
   "email": "john@example.com",
   "password": "123456",
   "zipCode": "654321",
