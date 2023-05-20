@@ -13,6 +13,7 @@ project-testing-api-rest-with-kotlin
 
 ## Customer
 
+
 **Rota: POST `/api/customers`**
 
 ```bash
@@ -31,17 +32,20 @@ Body: {
 
 #
 
+
 **Rota: GET `/api/customers/{id}`**
 
 "http://localhost:8080/api/customers/1"
 
 #
 
+
 **Rota: DELETE `/api/customers/{id}`**
 
 "http://localhost:8080/api/customers/1"
 
 #
+
 
 **Rota: PATCH `/api/customers?customerId={id}`**
 
@@ -60,6 +64,7 @@ Body: {
 
 ## Credits
 
+
 **Rota: POST `/api/credits`**
 
 ```bash
@@ -74,11 +79,13 @@ Body: {
 
 #
 
+
 **Rota: GET `/api/credits?customerId={customerId}`**
 
 "http://localhost:8080/api/credits?customerId=1"
 
 #
+
 
 **Rota: GET `/api/credits/{creditCode}?customerId={customerId}`**
 
