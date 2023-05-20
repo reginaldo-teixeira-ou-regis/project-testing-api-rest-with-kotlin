@@ -1,5 +1,5 @@
 project-testing-api-rest-with-kotlin
-## API Rest for a Credit Application Analysis System
+# API Rest for a Credit Application Analysis System
 
 ### Technologies Used:
 ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=plastic&logo=kotlin&logoColor=white)
@@ -12,18 +12,17 @@ project-testing-api-rest-with-kotlin
 
 #
 
-### SWAGGER URL
+## SWAGGER URL
 ```bash
 http://localhost:8080/swagger-ui.html
 ```
-
 #
 
 ### Api Documentation
 
 * #### Create Customer
 
-*****Rota: POST http://localhost:8080/api/customers*****
+##### Rota: POST http://localhost:8080/api/customers
 ```bash
 {
   "firstName": "John",
