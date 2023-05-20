@@ -1,7 +1,7 @@
 project-testing-api-rest-with-kotlin
-# API Rest for a Credit Application Analysis System
+## API Rest for a Credit Application Analysis System
 
-### Technologies Used:
+#### Technologies Used:
 ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=plastic&logo=kotlin&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=plastic&logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%236DB33F.svg?style=plastic&logo=spring-boot)
@@ -12,7 +12,7 @@ project-testing-api-rest-with-kotlin
 
 #
 
-## SWAGGER URL
+#### SWAGGER URL
 ```bash
 http://localhost:8080/swagger-ui.html
 ```
@@ -38,21 +38,21 @@ http://localhost:8080/swagger-ui.html
 
 #
 
-* ### Get Customer By id
+* #### Get Customer By id
 
-**Rota: GET http://localhost:8080/api/customers/1**
-
-#
-
-* ### Delete Customer By id
-
-**Rota: DELETE http://localhost:8080/api/customers/1**
+##### Rota: GET http://localhost:8080/api/customers/1
 
 #
 
-* ### Update Customer
+* #### Delete Customer By id
 
-**Rota: PATCH http://localhost:8080/api/customers?customerId=1**
+##### Rota: DELETE http://localhost:8080/api/customers/1
+
+#
+
+* #### Update Customer
+
+##### Rota: PATCH http://localhost:8080/api/customers?customerId=1
 ```bash
 {
   "firstName": "John",
@@ -65,9 +65,9 @@ http://localhost:8080/swagger-ui.html
 
 ---
 
-* ### Request Credit
+* #### Request Credit
 
-**Rota: POST http://localhost:8080/api/credits**
+##### Rota: POST http://localhost:8080/api/credits
 ```bash
 {
   "customerId": 1,
@@ -79,13 +79,13 @@ http://localhost:8080/swagger-ui.html
 
 #
 
-* ### Get All Customer Credits by Id
+* #### Get All Customer Credits by Id
 
-**Rota: GET http://localhost:8080/api/credits?customerId=1**
+##### Rota: GET http://localhost:8080/api/credits?customerId=1
 
 #
 
-* ### GET Credit By Credit Code
+* #### GET Credit By Credit Code
 
-**Rota: GET http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1**
+##### Rota: GET http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1
 
