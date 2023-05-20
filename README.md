@@ -21,7 +21,7 @@
     </a>
 </p>
 
-<h3>Project Description</h3>
+<h3 align="center">Project Description</h3>
 
 
 <figure>
