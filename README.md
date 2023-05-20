@@ -27,18 +27,21 @@ curl -s -X POST -H "Content-Type: application/json" -d '{
   "street": "John Street"
 }' "http://localhost:8080/api/customers"
 ```
+#
 
 **Rota: GET `/api/customers/{id}`**
 
 ```bash
 curl -s -X GET "http://localhost:8080/api/customers/1"
 ```
+#
 
 **Rota: DELETE `/api/customers/{id}`**
 
 ```bash
 curl -s -X DELETE "http://localhost:8080/api/customers/1"
 ```
+#
 
 **Rota: PATCH `/api/customers?customerId={id}`**
 
@@ -66,12 +69,14 @@ curl -s -X POST -H "Content-Type: application/json" -d '{
   "numberOfInstallments": 5
 }' "http://localhost:8080/api/credits"
 ```
+#
 
 **Rota: GET `/api/credits?customerId={customerId}`**
 
 ```bash
 curl -s -X GET "http://localhost:8080/api/credits?customerId=1"
 ```
+#
 
 **Rota: GET `/api/credits/{creditCode}?customerId={customerId}`**
 
