@@ -32,20 +32,15 @@ project-testing-api-rest-with-kotlin
 
 #
 
-**Rota: GET `/api/customers/{id}`**
-
-"http://localhost:8080/api/customers/1"
+**Rota: GET http://localhost:8080/api/customers/1**
 
 #
 
-**Rota: DELETE `/api/customers/{id}`**
-
-"http://localhost:8080/api/customers/1"
+**Rota: DELETE http://localhost:8080/api/customers/1**
 
 #
 
-**Rota: PATCH `/api/customers?customerId={id}`**
-
+**Rota: PATCH http://localhost:8080/api/customers?customerId=1**
 ```bash
 {
   "firstName": "John",
@@ -55,14 +50,10 @@ project-testing-api-rest-with-kotlin
   "street": "John Albert Doe Street"
 }
 ```
-"http://localhost:8080/api/customers?customerId=1"
 
 ---
 
-## Credits
-
-**Rota: POST `/api/credits`**
-
+**Rota: POST http://localhost:8080/api/credits**
 ```bash
 {
   "customerId": 1,
@@ -71,17 +62,12 @@ project-testing-api-rest-with-kotlin
   "numberOfInstallments": 20
 }
 ```
-"http://localhost:8080/api/credits"
 
 #
 
-**Rota: GET `/api/credits?customerId={customerId}`**
-
-"http://localhost:8080/api/credits?customerId=1"
+**Rota: GET http://localhost:8080/api/credits?customerId=1**
 
 #
 
-**Rota: GET `/api/credits/{creditCode}?customerId={customerId}`**
-
-"http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1"
+**Rota: GET http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1**
 
