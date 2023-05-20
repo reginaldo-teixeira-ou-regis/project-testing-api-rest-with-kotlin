@@ -29,15 +29,18 @@ Body: {
 ```
 #
 
-**Rota: GET `/api/customers/{id}`**  /  "http://localhost:8080/api/customers/1"
+**Rota: GET `/api/customers/{id}`**
+"http://localhost:8080/api/customers/1"
 
 #
 
-**Rota: DELETE `/api/customers/{id}`**  /  "http://localhost:8080/api/customers/1"
+**Rota: DELETE `/api/customers/{id}`**
+"http://localhost:8080/api/customers/1"
 
 #
 
-**Rota: PATCH `/api/customers?customerId={id}`**  /   "http://localhost:8080/api/customers?customerId=1"
+**Rota: PATCH `/api/customers?customerId={id}`**
+"http://localhost:8080/api/customers?customerId=1"
 
 ```bash
 Body: {
@@ -53,21 +56,24 @@ Body: {
 
 ### Credits
 
-**Rota: POST `/api/credits`**  /  "http://localhost:8080/api/credits"
+**Rota: POST `/api/credits`**
+"http://localhost:8080/api/credits"
 
 ```bash
 Body: {
   "customerId": 1,
-  "creditValue": 300.0,
-  "dayFirstOfInstallment": "2023-07-01",
-  "numberOfInstallments": 5
+  "creditValue": 1000.0,
+  "dayFirstOfInstallment": "2023-06-25",
+  "numberOfInstallments": 20
 }
 ```
 #
 
-**Rota: GET `/api/credits?customerId={customerId}`**  /  "http://localhost:8080/api/credits?customerId=1"
+**Rota: GET `/api/credits?customerId={customerId}`**
+"http://localhost:8080/api/credits?customerId=1"
 
 #
 
-**Rota: GET `/api/credits/{creditCode}?customerId={customerId}`**  /  "http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1"
+**Rota: GET `/api/credits/{creditCode}?customerId={customerId}`**
+"http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1"
 
