@@ -59,7 +59,7 @@ project-testing-api-rest-with-kotlin
 
 ---
 
-* ### Create Credit
+* ### Request Credit
 
 **Rota: POST http://localhost:8080/api/credits**
 ```bash
@@ -79,7 +79,7 @@ project-testing-api-rest-with-kotlin
 
 #
 
-* ### GET By Credit Code
+* ### GET Credit By Credit Code
 
 **Rota: GET http://localhost:8080/api/credits/30d540c4-2e7f-44f7-95f0-0cbbc980365f?customerId=1**
 
