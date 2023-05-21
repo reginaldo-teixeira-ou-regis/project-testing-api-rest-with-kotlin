@@ -43,15 +43,6 @@ class RestExceptionHandler {
           details = mutableMapOf(ex.cause.toString() to ex.message)
         )
       )
-    /*return ResponseEntity(
-      ExceptionDetails(
-        title = "Bad Request! Consult the documentation",
-        timestamp = LocalDateTime.now(),
-        status = HttpStatus.CONFLICT.value(),
-        exception = ex.javaClass.toString(),
-        details = mutableMapOf(ex.cause.toString() to ex.message)
-      ), HttpStatus.CONFLICT
-    )*/
   }
 
   @ExceptionHandler(BusinessException::class)

@@ -15,17 +15,22 @@ import org.springframework.web.bind.annotation.*
 class CustomerResource(
   private val customerService: CustomerService
 ) {
-
   @PostMapping
-  fun saveCustomer(@RequestBody @Valid customerDto: CustomerDto): ResponseEntity<CustomerView> {
+  fun saveCustomer(@RequestBody @Valid customerDto: CustomerDto
+  ): ResponseEntity<CustomerView> {
     val savedCustomer: Customer = this.customerService.save(customerDto.toEntity())
-    return ResponseEntity.status(HttpStatus.CREATED).body(CustomerView(savedCustomer))
+    return ResponseEntity
+      .status(HttpStatus.CREATED)
+      .body(CustomerView(savedCustomer))
   }
 
   @GetMapping("/{id}")
-  fun findById(@PathVariable id: Long): ResponseEntity<CustomerView> {
+  fun findById(@PathVariable id: Long
+  ): ResponseEntity<CustomerView> {
     val customer: Customer = this.customerService.findById(id)
-    return ResponseEntity.status(HttpStatus.OK).body(CustomerView(customer))
+    return ResponseEntity
+      .status(HttpStatus.OK)
+      .body(CustomerView(customer))
   }
 
   @DeleteMapping("/{id}")
@@ -37,9 +42,11 @@ class CustomerResource(
     @RequestParam(value = "customerId") id: Long,
     @RequestBody @Valid customerUpdateDto: CustomerUpdateDto
   ): ResponseEntity<CustomerView> {
-    val customer: Customer = this.customerService.findById(id)
-    val cutomerToUpdate: Customer = customerUpdateDto.toEntity(customer)
-    val customerUpdated: Customer = this.customerService.save(cutomerToUpdate)
-    return ResponseEntity.status(HttpStatus.OK).body(CustomerView(customerUpdated))
+    val customer = this.customerService.findById(id)
+    val updatedCustomer = customerUpdateDto.toEntity(customer)
+    val savedCustomer = this.customerService.save(updatedCustomer)
+    return ResponseEntity
+      .status(HttpStatus.OK)
+      .body(CustomerView(savedCustomer))
   }
 }

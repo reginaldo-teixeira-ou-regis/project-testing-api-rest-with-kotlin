@@ -17,19 +17,21 @@ import java.util.stream.Collectors
 class CreditResource(
   private val creditService: CreditService
 ) {
-
   @PostMapping
-  fun saveCredit(@RequestBody @Valid creditDto: CreditDto): ResponseEntity<String> {
+  fun saveCredit(
+    @RequestBody @Valid creditDto: CreditDto
+  ): ResponseEntity<CreditView> {
     val credit: Credit = this.creditService.save(creditDto.toEntity())
-    return ResponseEntity.status(HttpStatus.CREATED)
-      .body("Credit ${credit.creditCode} - Customer ${credit.customer?.email} saved!")
+    return ResponseEntity
+      .status(HttpStatus.CREATED)
+      .body(CreditView(credit))
   }
 
   @GetMapping
   fun findAllByCustomerId(@RequestParam(value = "customerId") customerId: Long):
       ResponseEntity<List<CreditViewList>> {
-    val creditViewList: List<CreditViewList> = this.creditService.findAllByCustomer(customerId)
-      .stream()
+    val creditViewList: List<CreditViewList> = this.creditService
+      .findAllByCustomer(customerId).stream()
       .map { credit: Credit -> CreditViewList(credit) }
       .collect(Collectors.toList())
     return ResponseEntity.status(HttpStatus.OK).body(creditViewList)
